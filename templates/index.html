@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malicious Link Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="{{url_for('static', filename='/static/dpimg.jpg')}}"
+    type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        Malicious & Spam Links Detector by Delhi Police.
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="jkjk">
+      <h1>M_Detector</h1>
+      <h3> Delhi Police Malware Detector Website</h3>
+      <p>
+      <h4>
+        Analyse suspicious files, domains,
+        IPs and URLs to detect malware and other breaches,<p>
+          automatically share them with the security community</p>
+      </h4>
+      </p>
+      <form action="/predict" method="post">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="user_input" name="url" required placeholder="Scan or Paste URL" autofocus="" type="text"
+          class="form-control" style="min-height: 50px;">
+        <button type="submit" class="primary-btn">Check</button>
+      </form>
+      <p id="result"></p>
+      </form>
+    </div>
+  </div>
+  </section>
+  </div>
+  </main>
+  <section>
+
+
+    <div class="container1">
+      <div class="question">
+        <h1>
+          FAQs Section
+        </h1>
+        <div class="question-item" id="question2">
+          <a class="question-link" href="#question2">
+            What are Malicious links ?
+            <ion-icon name="add-outline"></ion-icon>
+
+          </a>
+          <div class="answer">
+            <p>
+              Malicious links deceive users, leading to harmful websites or enabling fraud, malware, or phishing
+              attacks. Users should
+              exercise caution, verify links, and employ security measures to stay protected online.
+            </p>
+          </div>
+        </div>
+        <div class="question-item" id="question3">
+          <a class="question-link" href="#question3">
+            What possible harm can malicious or spam links do ?
+            <ion-icon name="add-outline"></ion-icon>
+
+          </a>
+          <div class="answer">
+            <p>
+              Malicious links can lead to a range of harms, including unauthorized access, data theft, financial loss,
+              malware
+              infections, identity theft, and compromise of personal or sensitive information
+            </p>
+          </div>
+        </div>
+
+        <div class="question-item" id="question4">
+          <a class="question-link" href="#question4">
+            How to avoid malicious links ?
+            <ion-icon name="add-outline"></ion-icon>
+
+          </a>
+          <div class="answer">
+            <p>
+              We have trained our model on numerous datasets, the site is pretty accurate but still tends to make some
+              mistakes.
+            </p>
+          </div>
+        </div>
+
+        <div class="question-item" id="question5">
+          <a class="question-link" href="#question5">
+            How do we determine whether a link is malicious or not?
+            <ion-icon name="add-outline"></ion-icon>
+
+          </a>
+          <div class="answer">
+            <p>
+              Inspect URL, check domain reputation, use link scanners, verify HTTPS, consult blacklists, and employ user
+              vigilance to
+              assess link trustworthiness.
+            </p>
+          </div>
+        </div>
+
+        <div class="question-item" id="question6">
+          <a class="question-link" href="#question6">
+            How accurate is our site ?
+            <ion-icon name="add-outline"></ion-icon>
+
+          </a>
+          <div class="answer">
+            <p>
+              We have trained our model on numerous datasets so the model works pretty well but there is always room for
+              few errors in every model.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <section class="footer-upper">
+    <div class="container">
+      <div class="footer-links">
+        <h4>Opportunities at Delhi Police</h4>
+        <ul>
+          <li> <a href="https://delhipolice.gov.in/">Contact Us</a></li>
+          <li><a href="https://delhipolice.gov.in/">Get Support</a></li>
+          <li><a href="https://delhipolice.gov.in/">How It Works</a></li>
+          <li><a href="https://delhipolice.gov.in/">ToS | Privacy Policy</a></li>
+          <li><a href="https://delhipolice.gov.in/">Blog | Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Lodge a Complaint</h4>
+        <ul>
+          <li><a href="https://delhipolice.gov.in/">
+              Join Community</a></li>
+
+          <li><a href="https://delhipolice.gov.in/">Vote and Comment</a></li>
+          <li><a href="https://delhipolice.gov.in/">Contributors</a></li>
+          <li><a href="https://delhipolice.gov.in/">Top Users</a></li>
+          <li><a href="https://delhipolice.gov.in/">Community Buzz</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>About Delhi Police</h4>
+        <ul>
+          <li><a href="https://delhipolice.gov.in/">
+              API Scripts</a></li>
+          <li><a href="https://delhipolice.gov.in/"> Desktop Apps</a></li>
+          <li><a href="https://delhipolice.gov.in/">Browser Extensions</a></li>
+          <li><a href="https://delhipolice.gov.in/">Mobile App</a></li>
+          <li><a href="https://delhipolice.gov.in/">Blog | Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://delhipolice.gov.in/">Searching</a></li>
+          <li><a href="https://delhipolice.gov.in/">Reports</a></li>
+          <li><a href="https://delhipolice.gov.in/">API v3 | v2</a></li>
+          <li><a href="https://delhipolice.gov.in/">Use Cases</a></li>
+          <li><a href="https://delhipolice.gov.in/">Blog | Releases</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

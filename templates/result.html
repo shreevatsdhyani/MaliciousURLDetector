@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious Link Detection Result</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            z-index: 1;
+            width: 80%;
+            height: auto;
+        }
+
+        .content-box {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            width: 60%;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .prediction {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .url {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='dpimg.jpg') }}" alt="Delhi Police Logo" class="background-image">
+    <div class="content-box">
+        <p class="url">URL: {{ url }}</p>
+        <p class="prediction">Prediction: {{ prediction }}</p>
+        <a href="/" class="back-button">Go Back</a>
+    </div>
+</body>
+</html>
