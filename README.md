@@ -1,7 +1,3 @@
-
-
----
-
 # Malicious & Spam Links Detector by Delhi Police
 
 This project is a web application that detects whether a given URL is benign or malicious. It uses a machine learning model to classify URLs into these two categories. The project is designed with a user-friendly interface and integrates the branding of the Delhi Police.
